@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Yiran Fan's Personal Website</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script>
+ 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  		ga('create', 'UA-86611206-1', 'auto');
+  		ga('send', 'pageview');
+
+	</script>
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html#page-top">
+                    <span class="light" href="index.html#page-top">Home</span> 
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="cs.html">CS</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="music.html">Music</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+	
+	<!-- /. main content of cs page --> 
+	<section class="content-section" >
+		<h2>Computer Science</h2>
+		<div class="project-block">
+			<p>Here are some of my cs-related work in no particular order. </p>
+			<h4>-Beethoven-</h4>
+			<div class="content-indent">
+				<p> An interactive processing project that allows user to click and drag to rotate the 3D model 
+				of a Beethoven bust about an arbitrary axis <a href="http://shape.cs.princeton.edu/search.html">(3D model source: Princeton 3D Model Search Engine)</a>. </p>
+				<figure>
+	   				<img src="img/1_beethoven_1.png" style="width:30%;">
+					<img src="img/1_beethoven_3.png" style="width:30%;">
+	   				<img src="img/1_beethoven_4.png" style="width:30%;">
+	   			</figure>
+			</div>
+		</div>
+		
+		<div class="project-block">
+			<h4>-Face Detection-</h4>
+			<div class="content-indent">
+				<p> Uses Histogram of Oriented Gradients techniques, non-maximum suppression, linear regression and logistic regression to train a model that detects human faces. </p>
+					<figure>
+	   					<img src="img/FD_train.jpg" style="width:40%;">
+						<img src="img/FD_test.jpg" style="width:40%;">
+						<figcaption>False positive to false negative plot -- left: training results; right: testing results. </figcaption>
+					</figure>
+					<figure>
+						<img src="img/FD_bttf_img.jpg" style="width:40%;">
+						<img src="img/FD_bttf_prob.jpg" style="width:40%;">
+						<figcaption>Left: image with detection result; right: probability map of the image.</figcaption>
+					</figure>
+					<figure>
+						<img src="img/FD_lawoman.jpg" style="width:40%;">
+						<img src="img/FD_addams.jpg" style="width:38.4%;">
+						<figcaption>Another two detection results.</figcaption>
+					</figure>
+			</div>
+		</div>
+		
+		<div class="project-block">
+			<h4>-Undergraduate Senior Honors Thesis-</h4>
+			<div class="content-indent">
+				<p>Guided by Dr. Matthew Hibbs, this research aimed to develop an algorithm that estimates the camera position in space from which an image was created using computer vision techniques. 
+				3 major steps: defining a distinct combination of features of the object, recognizing the object with the distinct features, and calculating camera position using the mapping information 
+				between the projected 2-D image and the 3-D object. </p>
+				<p>Please read <a href="http://digitalcommons.trinity.edu/compsci_honors/37/">the written thesis</a>, or take a peek at it below: </p>
+					<figure>
+	   					<img src="img/thesis_1.png" style="width:600px;">
+						<figcaption>Image after fitting ellipses to groups of radially contiguous ellipses. </figcaption>
+					</figure>
+					<figure>
+						<img src="img/thesis_2.png" style="width:600px;">
+						<figcaption>Left: the original image; right: the plotted results. Point number 6 represents the calculated camera position disregarding the distance factor.</figcaption>
+						<img src="img/thesis_3.png" style="width:600px;">
+						<figcaption>Left: the original image; right: the plotted results. Point number 11 represents the calculated camera position disregarding the distance factor.</figcaption>
+					</figure>
+			</div>
+		</div>
+		
+		
+		<div class="project-block">
+			<h4>-Visualization of Gene Expression-</h4>
+			<div class="content-indent">
+				<p> Visualized gene expression data of two species, danio rerio and mus musculus, under normoxia and hypoxia conditions 
+					using single-species scatter plots and two-species proximity maps. The visualization results highlight the similar responses 
+					to oxygen level in terms of gene expression across species. </p>
+				<p> Sample outputs: </p>
+					<figure>
+	   					<img src="img/1_bio_1.png" style="width:700px;">
+	   					<figcaption>A single-species scatter plot of mus musculus.</figcaption>
+						<img src="img/1_bio_2.png" style="width:700px;">
+						<figcaption>single-species scatter plot of danio rerio.</figcaption>
+					</figure>
+					<figure>
+						<img src="img/1_bio_3.png" style="width:700px;">
+						<figcaption>A two-species scatter plot of mus musculus and danio rerio. </figcaption>
+					</figure>
+					<figure>
+						<img src="img/1_bio_4.png" style="width:700px;">
+						<figcaption>A proximity map between the two species.</figcaption>
+					</figure>
+					<figure>
+						<img src="img/1_bio_5.png" style="width:700px;">
+					 	<figcaption>A zoomed-in view on the corresponding data to user's mouse position on the proximity map.</figcaption>
+					</figure>
+			</div>
+		</div>
+		
+		
+		<div class="project-block">
+			<h4>-An L-system Tree Visualization-</h4>
+			<div class="content-indent">
+				<p> Uses symbols (characters) to create a collection of rules of producing branches of a tree. </p>
+					<figure>
+	   					<img src="img/1_lsystem_0.png" style="width:300px; height: 300px;">
+	   					<img src="img/1_lsystem_1.png" style="width:300px; height: 300px;">
+	   					<figcaption></figcaption>
+						<img src="img/1_lsystem_2.png" style="width:300px; height: 300px;">
+						<img src="img/1_lsystem_3.png" style="width:300px; height: 300px;">
+						<figcaption>Top left: n = 1; top right: n = 3; bottom left: n = 5; bottom right: n = 6;</figcaption>
+					</figure>
+			</div>
+		</div>
+		
+		<div class="project-block">
+			<h4>-Internship at Rackspace-</h4>
+			<div class="content-indent">
+				<p>I worked as a full-time software engineering intern at Rackspace, San Antonio in the summer of 2014. I worked under Natalie King and the NPS 
+				team, with Julian Lopez, Oscar DeLeon, and Chester Elizondo as my mentors. </p> 
+				<p>Please refer to <a href="doc/YiranFan_CV.pdf">my CV</a> for further detail regarding the work I did at rackspace. But here are some pictures of the souvenirs I kept from the internship:</p> 
+					<figure>
+	   					<img src="img/1_internship_0.jpg" style="width:500px; height:500px;">
+	   					<figcaption>I'm a big-time hoarder.</figcaption>
+						<img src="img/1_internship_1.jpg" style="width:500px; height:500px;">
+						<figcaption>Some really kind words from my team</figcaption>
+						<img src="img/1_internship_2.jpg" style="width:500px; height:500px;">
+						<figcaption>A gift from the team when I left Rackspace...they clearly know me too well :)</figcaption>
+					</figure>
+			</div>
+		</div>
+		
+	</section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Yiran Fan 2016</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/grayscale.min.js"></script>
+
+</body>
+
+</html>
